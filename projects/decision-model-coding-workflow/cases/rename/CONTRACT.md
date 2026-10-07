@@ -1,0 +1,8 @@
+- A normalized title has 1 to 80 characters after stripping outer whitespace. Body defaults to an empty string when omitted. Tags default to an empty list, remove duplicates while preserving first occurrence, and retain their supplied order.
+- POST /documents creates an owned document and returns 201 with its JSON record. GET /documents/{id} returns the owned record with 200. PATCH /documents/{id} updates title/body/tags and returns the persisted record with 200. Ownership cannot be changed by a request.
+- GET /documents defaults to limit 20 and offset 0. Limit must be from 1 to 100 inclusive, offset must be nonnegative, and invalid input returns 422. Results include only the actor's nonarchived documents, ordered by increasing document ID.
+- POST /documents/{id}/archive and /restore return the updated record with 200 and persist the flag across fresh connections. An owner can read their archived document directly, but ordinary list/export-list results exclude it.
+- DELETE /documents/{id} returns 204 with no body. Document and associated tags are removed atomically. No orphaned tag rows remain.
+- GET /documents/{id}/export returns the owned document's JSON with 200. GET /exports/documents uses the list endpoint's ownership, archive, ordering, limit, and offset contract and preserves each document's tag order.
+- All operations on an absent or foreign document return 404 with the same {"detail":"Document not found"} body, without changing storage.
+- GET /token-message?reason=expired returns {"message":"Token expired. Please sign in again."} with 200. This is a display-only fixture endpoint, not an authentication implementation.

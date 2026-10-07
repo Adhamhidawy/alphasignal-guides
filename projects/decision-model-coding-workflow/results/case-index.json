@@ -1,0 +1,89 @@
+{
+  "cases": [
+    {
+      "case_id": "T01",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kfye68",
+      "packet": "packets/main-001/kfye68.json"
+    },
+    {
+      "case_id": "T02",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kunpzn",
+      "packet": "packets/main-001/kunpzn.json"
+    },
+    {
+      "case_id": "T03",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "k8cx7s",
+      "packet": "packets/main-001/k8cx7s.json"
+    },
+    {
+      "case_id": "T04",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kmjsw2",
+      "packet": "packets/main-001/kmjsw2.json"
+    },
+    {
+      "case_id": "I01",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "k6w753",
+      "packet": "packets/main-001/k6w753.json"
+    },
+    {
+      "case_id": "I02",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kja77y",
+      "packet": "packets/main-001/kja77y.json"
+    },
+    {
+      "case_id": "I03",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kr2gkp",
+      "packet": "packets/main-001/kr2gkp.json"
+    },
+    {
+      "case_id": "I04",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "ktctxd",
+      "packet": "packets/main-001/ktctxd.json"
+    },
+    {
+      "case_id": "S01",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "ka3gxd",
+      "packet": "packets/main-001/ka3gxd.json"
+    },
+    {
+      "case_id": "S02",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "k673em",
+      "packet": "packets/main-001/k673em.json"
+    },
+    {
+      "case_id": "S03",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kczb83",
+      "packet": "packets/main-001/kczb83.json"
+    },
+    {
+      "case_id": "S04",
+      "eligible": true,
+      "ineligible_reason": null,
+      "opaque_id": "kewrqj",
+      "packet": "packets/main-001/kewrqj.json"
+    }
+  ],
+  "updated_at": "2026-10-02T19:25:06+03:00"
+}

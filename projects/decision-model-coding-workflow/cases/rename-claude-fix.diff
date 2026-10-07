@@ -1,0 +1,11 @@
+--- a/src/document_api/repository.py
++++ b/src/document_api/repository.py
+@@ -23,7 +23,7 @@
+ """
+ 
+ 
+-_UPDATABLE_COLUMNS = {"name": "title", "body": "body"}
++_UPDATABLE_COLUMNS = {"title": "title", "body": "body"}
+ 
+ 
+ class DocumentRepository:

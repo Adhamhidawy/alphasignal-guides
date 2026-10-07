@@ -1,0 +1,5 @@
+.venv/
+.ollaya/
+ollaya-install.sh
+/demo*/
+__pycache__/

@@ -1,0 +1,199 @@
+{
+  "frozen_at": "2026-10-02T19:25:38+03:00",
+  "references": {
+    "adjustment_rule": [
+      "Start from the recipe's initial reference; it stays acceptable unless the diff does not touch the requested behavior.",
+      "Also accept integration_tests when the diff changes behavior in two or more modules across an HTTP/service/export/storage boundary.",
+      "Also accept security_review when the diff changes code that decides which actor may see or change a document.",
+      "Also accept targeted_tests when the diff's whole change sits inside one pure validation or formatting function.",
+      "Never consult oracle outcomes, seeded-tree diagnostics, or any selector answer when applying this rule."
+    ],
+    "adjustments": "none: the pre-declared rule added no path to any case",
+    "cases": {
+      "k673em": {
+        "acceptable_paths": [
+          "security_review"
+        ],
+        "case_id": "S02",
+        "changed_paths": [
+          "src/document_api/repository.py"
+        ],
+        "diff_sha256": "0f2ec8187291d944715a73057639f957bb7b54b7122e1ecf95efc74d260faacc",
+        "initial_reference": [
+          "security_review"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff restores the owner predicate in repository.list_documents. Rule 3 matches the initial security reference. No addition."
+      },
+      "k6w753": {
+        "acceptable_paths": [
+          "integration_tests"
+        ],
+        "case_id": "I01",
+        "changed_paths": [
+          "src/document_api/repository.py"
+        ],
+        "diff_sha256": "3870220f6c53b0ebcf097f9bb38ce49d8dba72ffea5edae1e3255c215c4b191e",
+        "initial_reference": [
+          "integration_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff changes the update column mapping in repository.py only. One module, so rule 2 adds nothing; not a pure function; no visibility code. Initial integration reference kept."
+      },
+      "k8cx7s": {
+        "acceptable_paths": [
+          "targeted_tests"
+        ],
+        "case_id": "T03",
+        "changed_paths": [
+          "src/document_api/fields.py"
+        ],
+        "diff_sha256": "00d56b3b66fd4ed8e47e0704ff476db342bc2f4debc4b948fa8ed4ab4975c04f",
+        "initial_reference": [
+          "targeted_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff changes only validate_pagination in fields.py (one pure validation function). Rule 4 keeps targeted. No addition."
+      },
+      "ka3gxd": {
+        "acceptable_paths": [
+          "security_review"
+        ],
+        "case_id": "S01",
+        "changed_paths": [
+          "src/document_api/service.py"
+        ],
+        "diff_sha256": "08781ddef1622eebe2d14efc9b57e3b0619cf803bcb61fe200e3d6f867e6a004",
+        "initial_reference": [
+          "security_review"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff restores the owner visibility check in service.update_document. Rule 3 matches the initial security reference. No addition."
+      },
+      "kczb83": {
+        "acceptable_paths": [
+          "security_review"
+        ],
+        "case_id": "S03",
+        "changed_paths": [
+          "src/document_api/exports.py"
+        ],
+        "diff_sha256": "1d0590beb510666e15af2f4d25669eb1b7d81ae1054c4212e957957e895945df",
+        "initial_reference": [
+          "security_review"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff routes export_document in exports.py through the service visibility check. Rule 3 matches the initial security reference. No addition."
+      },
+      "kewrqj": {
+        "acceptable_paths": [
+          "security_review"
+        ],
+        "case_id": "S04",
+        "changed_paths": [
+          "src/document_api/service.py"
+        ],
+        "diff_sha256": "65493f8444046916cf32d1629e8c30578c94be4b20220a57a4b9aca78c973a86",
+        "initial_reference": [
+          "security_review"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff restores the owner visibility check in service.restore_document. Rule 3 matches the initial security reference. No addition."
+      },
+      "kfye68": {
+        "acceptable_paths": [
+          "targeted_tests"
+        ],
+        "case_id": "T01",
+        "changed_paths": [
+          "src/document_api/fields.py"
+        ],
+        "diff_sha256": "0e99f95cb21cab8146d3faf4704790f0e807725dcc26278e9e57e304e113b065",
+        "initial_reference": [
+          "targeted_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff changes only normalize_title in fields.py (one pure validation function). Rule 4 keeps targeted. One module, no visibility code: no addition."
+      },
+      "kja77y": {
+        "acceptable_paths": [
+          "integration_tests"
+        ],
+        "case_id": "I02",
+        "changed_paths": [
+          "src/document_api/repository.py"
+        ],
+        "diff_sha256": "9560a4156794439ed20a8a5c28ca3447babc8ad7284af2199405eb5767c74d27",
+        "initial_reference": [
+          "integration_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff adds the commit in repository.set_archived only. One module; persistence is the requested behavior. Initial integration reference kept."
+      },
+      "kmjsw2": {
+        "acceptable_paths": [
+          "targeted_tests"
+        ],
+        "case_id": "T04",
+        "changed_paths": [
+          "src/document_api/token_messages.py"
+        ],
+        "diff_sha256": "7dcd9ccf0769cdc2bcfdcf65642b57dad607bc3f393a9610b9da84bad47ff60a",
+        "initial_reference": [
+          "targeted_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff changes only _sentence in token_messages.py (one pure formatting function, no identity logic). Rule 4 keeps targeted. No addition."
+      },
+      "kr2gkp": {
+        "acceptable_paths": [
+          "integration_tests"
+        ],
+        "case_id": "I03",
+        "changed_paths": [
+          "src/document_api/exports.py"
+        ],
+        "diff_sha256": "2066e8e69dde747fbdc07f1604877a94b4c53862d538dd4a1c2bc5d91cf97461",
+        "initial_reference": [
+          "integration_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff routes export_documents in exports.py through the service list. One module changed. Initial integration reference kept."
+      },
+      "ktctxd": {
+        "acceptable_paths": [
+          "integration_tests"
+        ],
+        "case_id": "I04",
+        "changed_paths": [
+          "src/document_api/repository.py"
+        ],
+        "diff_sha256": "81f7cc9d08c636aa89c8fdb7a0a7f79f05ed1c83f98036fe1619553431068767",
+        "initial_reference": [
+          "integration_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff adds tag-row deletion in repository.delete_document only. One module. Initial integration reference kept."
+      },
+      "kunpzn": {
+        "acceptable_paths": [
+          "targeted_tests"
+        ],
+        "case_id": "T02",
+        "changed_paths": [
+          "src/document_api/fields.py"
+        ],
+        "diff_sha256": "6d47acadb128eaab1c9e2775aae967d6d2502af5f93dfa094a218c52dae5bb0e",
+        "initial_reference": [
+          "targeted_tests"
+        ],
+        "prepared_at": "2026-10-02",
+        "rationale": "Diff changes only normalize_title in fields.py (one pure validation function). Rule 4 keeps targeted. No addition."
+      }
+    },
+    "policy_written_at": "2026-10-02, before any main-run diff was viewed",
+    "prepared_after": "freeze-cases for main-001 (all 12 eligible); before run-oracle and before any main selector call",
+    "provenance": "agent-prepared by the executing agent (Claude Code session, 2026-10-02); not a human label. Prepared from the public task, the public contract, the actual frozen diff, and the registered suite descriptions and test names, after freeze-cases and before run-oracle and run-selectors."
+  },
+  "sha256": "18ce92523a5901b60e305766da0ac7d1bba436b8da5b8aa800342bb8bbb36551"
+}
