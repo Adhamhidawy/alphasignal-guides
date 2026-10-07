@@ -4,7 +4,7 @@
 
 It speaks the TypeSafe `/v1/systemone` request shape, so the same code calls hosted Jev or a local model served by [Ollaya](https://ollaya.dev). This folder also holds the rename bug from my test, so you can reproduce the example before you point the wrapper at your own repository.
 
-This is the companion to my AlphaSignal article on [adding a decision model to your coding workflow](https://alphasignal.ai/news/how-to-add-a-decision-model-to-your-coding-workflow). The interactive [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) goes with it: where decision calls go in the loop, which model fits your setup, the code for Jev, Ollaya, Perplexity, and Cloudflare, and all 144 answers from my test. `index.html` in this folder is that same page.
+This is the companion to my two-part AlphaSignal series. [Part 1](https://alphasignal.ai/news/how-to-add-a-decision-model-to-your-coding-workflow) shows how to add a decision model to your coding workflow, and [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop) shows how to test one before you trust it. The interactive [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) goes with both: where decision calls go in the loop, which model fits your setup, the code for Jev, Ollaya, Perplexity, and Cloudflare, and all 144 answers from my test. `index.html` in this folder is that same page.
 
 ## What's in this folder
 
@@ -177,7 +177,7 @@ uv run pytest
 
 The rename case, its tests, the 12 packets, and the frozen fix come from my extra-check experiment (run `main-001`, 2026-10-02), which an AI coding agent built and ran on my Mac. In that run, Claude Code fixed 12 seeded bugs. Jev, winnow:e4b, Claude in a plain message, and a filename rule then each picked one extra check, three times per fix. That agent also prepared the reference labels, and no person reviewed them. Only the rename fix kept a bug the extra suites could catch, and every picker caught it.
 
-`results/` has all 144 answers, with what each field means, so you can check any number in the article or the guide against the raw records.
+`results/` has all 144 answers, with what each field means, so you can check any number in either article or the guide against the raw records. [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop) walks through the test step by step, so you can run the same one on your own fixes.
 
 ## License
 

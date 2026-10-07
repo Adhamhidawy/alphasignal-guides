@@ -10,7 +10,7 @@ Interactive guides and runnable code that go with [AlphaSignal](https://alphasig
 
 ## Projects
 
-- [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) ([code](projects/decision-model-coding-workflow/)): add a decision model to a Claude Code loop with `next_check.py`, then check all 144 scored answers from my test.
+- [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) ([code](projects/decision-model-coding-workflow/)): add a decision model to a Claude Code loop with `next_check.py`, then check all 144 scored answers from my test. It goes with a two-part series: [Part 1](https://alphasignal.ai/news/how-to-add-a-decision-model-to-your-coding-workflow) and [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop).
 
 ## Pro guides
 

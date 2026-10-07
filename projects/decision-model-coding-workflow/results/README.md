@@ -7,7 +7,7 @@ These files hold every answer from my extra-check test (run `main-001`, scored 2
 - Claude in a plain message with no tools
 - A rule based on filenames
 
-That's 4 × 12 × 3 = 144 answers. The guide's [Results page](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/#my-results) shows the same data fix by fix.
+That's 4 × 12 × 3 = 144 answers. The guide's [Results page](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/#my-results) shows the same data fix by fix, and [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop) of the article series walks through it step by step.
 
 | File | What it holds |
 |---|---|
