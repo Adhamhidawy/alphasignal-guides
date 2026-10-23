@@ -4,7 +4,7 @@
 
 It speaks the TypeSafe `/v1/systemone` request shape, so the same code calls hosted Jev or a local model served by [Ollaya](https://ollaya.dev). This folder also holds the rename bug from my test, so you can reproduce the example before you point the wrapper at your own repository.
 
-This is the companion to my two-part AlphaSignal series. [Part 1](https://alphasignal.ai/news/how-to-add-a-decision-model-to-your-coding-workflow) shows how to add a decision model to your coding workflow, and [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop) shows how to test one before you trust it. The interactive [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) goes with both: where decision calls go in the loop, which model fits your setup, the code for Jev, Ollaya, Perplexity, and Cloudflare, and all 144 answers from my test. `index.html` in this folder is that same page.
+This is the companion to my two-part AlphaSignal series. [Part 1](https://alphasignal.ai/news/how-to-add-a-decision-model-to-your-agentic-coding-workflow) shows how to add a decision model to your coding workflow, and [Part 2](https://alphasignal.ai/news/how-to-test-a-decision-model-in-your-coding-loop) shows how to test one before you trust it. The interactive [Decision Model Field Guide](https://adhamhidawy.github.io/alphasignal-guides/projects/decision-model-coding-workflow/) goes with both: where decision calls go in the loop, which model fits your setup, the code for Jev, Ollaya, Perplexity, and Cloudflare, and all 144 answers from my test. `index.html` in this folder is that same page.
 
 ## What's in this folder
 
